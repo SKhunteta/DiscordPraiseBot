@@ -10,5 +10,14 @@ client.on('message', msg => {
   if (msg.content === 'Shrey') {
     msg.reply('Praise Shrey!')
   }
+  if (msg.content === 'Karen') {
+    msg.reply('Praise Karen!')
+  }
+  if (msg.content === 'Hunter') {
+    msg.reply('Praise Hunter!')
+  }
+  if (msg.content === 'Arete') {
+    msg.reply('Praise Arete!')
+  }
 })
 client.login(process.env.BOT_TOKEN)

@@ -7,17 +7,29 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content === 'Shrey') {
-    msg.reply('Praise Shrey!')
+  if (!msg.author.bot) {
+  
+  if (msg.content.includes('Shrey')) {
+    for (i = 0; i < 10; i++) {
+    msg.reply('PRAISE SHREY!')
+    }
   }
-  if (msg.content === 'Karen') {
-    msg.reply('Praise Karen!')
+  if (msg.content.includes('Karen')) {
+    for (i = 0; i < 10; i++) {
+    msg.reply('PRAISE KAREN!')
+    }
   }
-  if (msg.content === 'Hunter') {
-    msg.reply('Praise Hunter!')
+  if (msg.content.includes('Hunter')) {
+    for (i = 0; i < 10; i++) {
+    msg.reply('PRAISE HUNTER!')
+    }
   }
-  if (msg.content === 'Arete') {
-    msg.reply('Praise Arete!')
+  if (msg.content.includes('Arete')) {
+    for (i = 0; i < 10; i++) {
+    msg.reply('PRAISE ARETE!')
+    msg.reply('FUCK OFF ARETE')
+    }
   }
+}
 })
 client.login(process.env.BOT_TOKEN)

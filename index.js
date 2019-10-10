@@ -27,7 +27,6 @@ client.on('message', msg => {
   if (msg.content.includes('Arete')) {
     for (i = 0; i < 10; i++) {
     msg.reply('PRAISE ARETE!')
-    msg.reply('FUCK OFF ARETE')
     }
   }
 }

@@ -29,6 +29,9 @@ client.on('message', msg => {
     msg.reply('PRAISE ARETE!')
     }
   }
+  if (msg.content.includes('PraiseBot')) {
+    msg.reply('I love you and exist to serve.')
+  }
 }
 })
 client.login(process.env.BOT_TOKEN)
